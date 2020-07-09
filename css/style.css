@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-size: 1.5rem;
   font-family: 'Raleway', sans-serif;
+  transition: all 0.7s ease-in-out;
 }
 
 :root {
@@ -35,10 +36,6 @@ div {
 
 /* Button1 */
 
-#button1, #button1 i {
-  transition: all 0.3s ease-in-out;
-}
-
 #button1 i {
   margin-left: 10px;
 }
@@ -55,7 +52,6 @@ div {
   position: relative;
   vertical-align: middle;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
 }
 
 #button2:hover i {
@@ -83,7 +79,6 @@ div {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.7s ease-in-out;
 }
 
 #button3:hover {
@@ -95,4 +90,17 @@ div {
     transform: scale(1.2);
     background-color: var(--primaryColor);
   }
+}
+
+#button4 {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button4:hover {
+  transform: translateX(30%);
 }
