@@ -64,8 +64,8 @@ div {
 
 #button2 {
   position: relative;
-  vertical-align: middle;
   overflow: hidden;
+  transition-duration: 0.3s;
 }
 
 #button2:hover i {
@@ -117,6 +117,7 @@ div {
 
 #button4:hover {
   transform: translateX(30%);
+  background-color: var(--primaryColor);
 }
 
 #button5 {
