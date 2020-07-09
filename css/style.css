@@ -40,12 +40,8 @@ div {
   width: 10px;
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
 ::-webkit-scrollbar-thumb {
-  background: salmon;
+  background: var(--primaryColor);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -121,4 +117,27 @@ div {
 
 #button4:hover {
   transform: translateX(30%);
+}
+
+#button5 {
+  border: none;
+  transition-duration: 0.3s;
+}
+
+#button5:hover {
+  transform: rotate(90deg);
+}
+
+#button6 {
+  border: none;
+}
+
+#button6 i {
+  animation: wheel 2s linear infinite;
+}
+
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
 }
