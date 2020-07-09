@@ -48,3 +48,27 @@ div {
 #button1:hover {
   background-color: var(--primaryColor);
 }
+
+#button2 {
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#button2:hover i {
+  animation: bottomToTop 0.3s ease-in-out;
+}
+
+@keyframes bottomToTop {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+}
+
+#button2:hover {
+  transform: scale(0.9);
+  background-color: var(--primaryColor);
+}
