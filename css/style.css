@@ -1,3 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --primaryColor: salmon;
+  --secondaryColor: #53403d
+}
+
 body {
-  background-color: salmon;
+  background-color: var(--secondaryColor);
+}
+
+/* Container */
+
+section {
+  width: 90%;
+  margin: 30px auto;
+}
+
+div {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+}
+
+/* Button1 */
+
+#button1, #button1 i {
+  transition: all 0.3s ease-in-out;
+}
+
+#button1 i {
+  margin-left: 10px;
+}
+
+#button1:hover i {
+  transform: rotate(90deg);
+}
+
+#button1:hover {
+  background-color: var(--primaryColor);
 }
