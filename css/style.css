@@ -34,7 +34,25 @@ div {
   cursor: pointer;
 }
 
-/* Button1 */
+/* ScrollBar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: salmon;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(207, 98, 85);
+}
+
+/* Buttons */
 
 #button1 i {
   margin-left: 10px;
