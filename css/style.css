@@ -29,6 +29,8 @@ div {
   padding: 20px;
   margin: 10px;
   color: white;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 /* Button1 */
@@ -50,7 +52,8 @@ div {
 }
 
 #button2 {
-  position: absolute;
+  position: relative;
+  vertical-align: middle;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -71,4 +74,25 @@ div {
 #button2:hover {
   transform: scale(0.9);
   background-color: var(--primaryColor);
+}
+
+#button3 {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+}
+
+#button3:hover {
+  animation: pump 0.7s ease-in-out;
+}
+
+@keyframes pump {
+  40% {
+    transform: scale(1.2);
+    background-color: var(--primaryColor);
+  }
 }
