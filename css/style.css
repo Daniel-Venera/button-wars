@@ -10,6 +10,7 @@
 :root {
   --primaryColor: salmon;
   --secondaryColor: #53403d;
+  --transition: all 0.7s ease-in-out;
 }
 
 body {
@@ -72,25 +73,27 @@ section {
   font-size: 1.5em;
 }
 
-#button1 i {
+/* Hover */
+
+#hover1 i {
   margin-left: 10px;
 }
 
-#button1:hover i {
+#hover1:hover i {
   transform: rotate(90deg);
 }
 
-#button1:hover {
+#hover1:hover {
   background-color: var(--primaryColor);
 }
 
-#button2 {
+#hover2 {
   position: relative;
   overflow: hidden;
   transition-duration: 0.3s;
 }
 
-#button2:hover i {
+#hover2:hover i {
   animation: bottomToTop 0.3s ease-in-out;
 }
 
@@ -103,12 +106,12 @@ section {
   }
 }
 
-#button2:hover {
+#hover2:hover {
   transform: scale(0.9);
   background-color: var(--primaryColor);
 }
 
-#button3 {
+#hover3 {
   border-radius: 50%;
   height: 70px;
   width: 70px;
@@ -117,7 +120,7 @@ section {
   justify-content: center;
 }
 
-#button3:hover {
+#hover3:hover {
   animation: pump 0.7s ease-in-out;
 }
 
@@ -128,7 +131,7 @@ section {
   }
 }
 
-#button4 {
+#hover4 {
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -137,19 +140,44 @@ section {
   justify-content: center;
 }
 
-#button4:hover {
+#hover4:hover {
   transform: translateX(30%);
   background-color: var(--primaryColor);
 }
 
-#button5 {
+#hover5 {
   border: none;
   transition-duration: 0.3s;
 }
 
-#button5:hover {
+#hover5:hover {
   transform: rotate(90deg);
 }
+
+#hover6 {
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hover6::before {
+  content: "";
+  background-color: salmon;
+  position: absolute;
+  z-index: -1;
+  width: 120%;
+  height: 0%;
+  transition: var(--transition);
+  transform: rotate(25deg);
+}
+
+#hover6:hover::before {
+  height: 180%;
+}
+
+/* Click */
 
 .menu-burger {
   padding: 0;
@@ -175,7 +203,7 @@ section {
   height: 6px;
   background-color: white;
   border-radius: 5px;
-  transition: all 0.7s ease-in-out;
+  transition: var(--transition);
 }
 
 .menu-burger__btn::before {
