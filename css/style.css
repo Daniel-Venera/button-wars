@@ -219,6 +219,37 @@ section {
   transform: translateX(15px);
 }
 
+#hover10 {
+  border: none;
+}
+
+#hover10::before,
+#hover10::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#hover10::before {
+  top: 30%;
+}
+
+#hover10::after {
+  top: 60%;
+  right: -50%;
+}
+
+#hover10:hover::before {
+  transform: translateX(50%);
+}
+
+#hover10:hover::after {
+  transform: translateX(-50%);
+}
+
 /* Click */
 
 .menu-burger {
