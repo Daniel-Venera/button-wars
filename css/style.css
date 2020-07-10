@@ -202,6 +202,23 @@ section {
   transform: scale(2);
 }
 
+#hover9 i {
+  text-align: center;
+  margin-left: 10px;
+}
+
+#hover9:hover {
+  background-color: var(--primaryColor);
+}
+
+#hover9:hover i {
+  transform: translateX(100px);
+}
+
+#hover9:hover span {
+  transform: translateX(15px);
+}
+
 /* Click */
 
 .menu-burger {
