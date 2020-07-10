@@ -19,6 +19,16 @@ body {
   padding-top: 30px;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
 /* ScrollBar */
 
 ::-webkit-scrollbar {
@@ -295,4 +305,10 @@ section {
 
 .menu-burger.open .menu-burger__btn::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* About */
+
+.about p {
+  text-indent: 5%;
 }
