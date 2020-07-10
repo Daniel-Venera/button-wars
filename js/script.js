@@ -1,2 +1,11 @@
 let log = console.log;
-log("oui");
+
+let burgerCross = document.querySelector(".menu-burger");
+
+burgerCross.addEventListener("click", function () {
+  if (!burgerCross.classList.contains("open")) {
+    burgerCross.classList.add("open");
+  } else {
+    burgerCross.classList.remove("open");
+  }
+});
