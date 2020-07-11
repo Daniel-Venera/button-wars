@@ -309,23 +309,25 @@ section {
   width: 100px;
   overflow: visible;
   border-radius: 50px;
-  border: 1px solid white;
-  transition: none;
+  background-color: white;
+  border: none;
 }
 
 #click2::before {
   content: "";
   position: absolute;
   z-index: 2;
-  background-color: #A16D65;
+  background-color: #AD9C9C;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   left: -10px;
+  transition: var(--transition);
+  ;
 }
 
 .on {
-  background-color: var(--primaryColor);
+  background-color: var(--primaryColor) !important;
 }
 
 .on::before {
