@@ -23,8 +23,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
   color: var(--primaryColor);
 }
@@ -162,7 +161,7 @@ section {
 
 #hover6::before {
   content: "";
-  background-color: salmon;
+  background-color: var(--primaryColor);
   position: absolute;
   z-index: -1;
   width: 120%;
@@ -233,8 +232,7 @@ section {
   border: none;
 }
 
-#hover10::before,
-#hover10::after {
+#hover10::before, #hover10::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -275,8 +273,7 @@ section {
   border-radius: 5px;
 }
 
-.menu-burger__btn::before,
-.menu-burger__btn::after {
+.menu-burger__btn::before, .menu-burger__btn::after {
   content: "";
   position: absolute;
   width: 50px;
@@ -305,6 +302,35 @@ section {
 
 .menu-burger.open .menu-burger__btn::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+#click2 {
+  height: 20px;
+  width: 100px;
+  overflow: visible;
+  border-radius: 50px;
+  border: 1px solid white;
+  transition: none;
+}
+
+#click2::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background-color: #A16D65;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  left: -10px;
+}
+
+.on {
+  background-color: var(--primaryColor);
+}
+
+.on::before {
+  transform: translateX(70px);
+  background-color: rgb(207, 98, 85) !important;
 }
 
 /* About */
