@@ -13,10 +13,20 @@
   --transition: all 0.7s ease-in-out;
 }
 
+div::before,
+div::after {
+  transition: var(--transition);
+}
+
 body {
   background-color: var(--secondaryColor);
   color: white;
   padding-top: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 h2 {
@@ -167,7 +177,6 @@ section {
   z-index: -1;
   width: 120%;
   height: 0%;
-  transition: var(--transition);
   transform: rotate(25deg);
 }
 
@@ -178,7 +187,6 @@ section {
 #hover7::before {
   content: "";
   background-color: var(--primaryColor);
-  transition: var(--transition);
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -205,7 +213,6 @@ section {
   right: 0;
   transform: scale(0);
   border-radius: 100%;
-  transition: var(--transition);
 }
 
 #hover8:hover::before {
@@ -281,7 +288,6 @@ section {
   width: 30%;
   border-radius: 50px;
   left: 0;
-  transition: var(--transition);
 }
 
 #hover11:hover::before {
@@ -307,7 +313,6 @@ section {
   transform: rotate(45deg);
   left: -30px;
   top: -100px;
-  transition: var(--transition);
 }
 
 #hover12:hover::before {
@@ -318,6 +323,29 @@ section {
 #hover12:hover {
   background-color: var(--primaryColor);
   color: white;
+}
+
+#hover13 {
+  overflow: visible;
+  border: none;
+}
+
+#hover13::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1%;
+  width: 50%;
+  background-color: var(--primaryColor);
+  transform: scale(0);
+}
+
+#hover13:hover::before {
+  transform: scale(1);
+}
+
+#hover13:hover {
+  color: var(--primaryColor);
 }
 
 /* Click */
@@ -343,7 +371,6 @@ section {
   height: 6px;
   background-color: white;
   border-radius: 5px;
-  transition: var(--transition);
 }
 
 .menu-burger__btn::before {
@@ -385,7 +412,6 @@ section {
   width: 50px;
   border-radius: 50%;
   left: -10px;
-  transition: var(--transition);
 }
 
 .on {
