@@ -292,6 +292,34 @@ section {
   transform: translateX(-20px);
 }
 
+#hover12 {
+  border-color: var(--primaryColor);
+  color: var(--primaryColor);
+}
+
+#hover12::before {
+  content: "";
+  height: 200%;
+  width: 30%;
+  background-color: white;
+  position: absolute;
+  opacity: 0.2;
+  transform: rotate(45deg);
+  left: -30px;
+  top: -100px;
+  transition: var(--transition);
+}
+
+#hover12:hover::before {
+  left: 100px;
+  top: 40px;
+}
+
+#hover12:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
 /* Click */
 
 .menu-burger {
